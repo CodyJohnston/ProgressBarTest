@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProgressBarTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgressBarTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin=" 0 0 0 40" Text="Normal Height"/>
+        <ProgressBar IsIndeterminate="True"></ProgressBar>
+
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin=" 0 0 0 40" Text="Height Set to 10"/>
+        <ProgressBar Grid.Row="1" Height="10" IsIndeterminate="True"></ProgressBar>
+    </Grid>
+</Window>
